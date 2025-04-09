@@ -1,0 +1,9 @@
+<div class="deck">
+    <h3>Right Deck ({{cardServ.rightDeck().length}}/5)</h3>
+    <div class="deck-cards">
+      <div *ngFor="let card of cardServ.rightDeck()" class="deck-card">
+        <img [src]="card.card_images[0]?.image_url_small" [alt]="card.name">
+        <button (click)="removeCard(card.id)">×</button>
+      </div>
+    </div>
+  </div>

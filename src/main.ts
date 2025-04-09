@@ -6,5 +6,4 @@ import { CardserviceService } from './app/services/cardservice.service';
 bootstrapApplication(AppComponent, appConfig)
   .catch((err) => console.error(err));
 
-  // const service = CardserviceService
-  // service.loadMonsters();
+ 

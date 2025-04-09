@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+.decks-container {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+    gap: 20px;
+  }
+  
+  app-deckleft, app-deckright {
+    flex: 1;
+    max-width: calc(50% - 10px);
+  }
+  
+  /* Il tuo CSS esistente per .list-container resta uguale */
+  .cards-list-container {
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+  }

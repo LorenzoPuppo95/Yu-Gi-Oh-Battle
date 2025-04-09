@@ -1,1 +1,14 @@
-<p>card works!</p>
+<div class="card">
+    <img [src]="image_url()" [alt]="name()">
+    <div class="card-button">
+      <h3>{{ name() }}</h3>
+      <div class="card-actions">
+        <button (click)="addToLeft()" [disabled]="cardServ.leftDeck().length >= 5">
+          Add Left ({{cardServ.leftDeck().length}}/5)
+        </button>
+        <button (click)="addToRight()" [disabled]="cardServ.rightDeck().length >= 5">
+          Add Right ({{cardServ.rightDeck().length}}/5)
+        </button>
+      </div>
+    </div>
+  </div>

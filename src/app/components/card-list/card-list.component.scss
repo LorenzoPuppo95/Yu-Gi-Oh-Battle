@@ -1,0 +1,33 @@
+.list-container {
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    height: 350px; /* Altezza fissa */
+    background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.7));
+    padding: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    z-index: 1000;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.6);
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    bottom: 50px; /* Assicurati che sia uguale a .cards-list-container */
+  height: 300px; /* Riduci se necessario */
+  }
+  
+  /* Stile della scrollbar */
+  .list-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .list-container::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+  }
+  
+  .list-container::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.1);
+  }
